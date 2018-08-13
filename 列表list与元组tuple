@@ -1,0 +1,56 @@
+# !/usr/bin/env python3
+# -*- coding:utf-8 -*-
+
+#  列表list：一种有序集合，用“[]”表示，可索引，可增删改，可插入，元素类型可以不同。
+# 元素解释：字符串，整数，布尔值，浮点数，列表，元组
+mylist=['jack', 27, True, 6.5, ['undergraduate', 'master'], (3.5, 3.6)]
+# --索引，从0开始。
+print(mylist[0])
+# --增加，使用append()方法。
+mylist.append('female')
+print(mylist)
+# --删除，使用pop()方法。删除末尾元素，pop()；删除指定位置元素，pop(i)，i为索引位置。
+mylist.pop()
+print(mylist)
+mylist.pop(-1)
+print(mylist)
+# --修改，根据索引直接赋值。
+mylist[0] = 'Tom'
+print(mylist)
+# --插入，使用insert(i,object)方法，i为索引位置,object为插入的元素。
+mylist.insert(1, 'female')
+print(mylist)
+
+#  元组tuple：一种有序集合,用“()”表示，可索引，不可增删改，不可插入，元素类型可以不同。
+# --索引，从0开始。
+# 元组中的元素如有列表，则列表可变。
+mytuple=('jack', 27, True, 6.5, ['undergraduate', 'master'], (3.5, 3.6))
+mytuple[4].append('phD')
+print(mytuple)
+# 当元组只有一个元素时，需在该元素后面加一个逗号，即写成('jack',)，而不是('jack')
+
+print('-----------------------------------------------------------------001')
+
+
+# input()方法读取用户的输入。
+#data = input('please input the data:')
+#if int(data) % 2 == 0:
+#    print('这是一个偶数')
+#else:
+#    print('这是一个奇数')
+
+print('-----------------------------------------------------------------002')
+
+
+# set：与dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以在set中，没有重复的key。
+# 在set中，重复的元素被自动过滤。
+myset = ([1, 2, 3, 4, 5, 1, 2])
+s = myset
+print(s)
+
+
+
+
+
+
+
